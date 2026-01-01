@@ -9,6 +9,7 @@
 
 body{
     background: #fff;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;

@@ -1,145 +1,162 @@
-.courses{
- padding-top: 50px;
- padding-bottom: 60px;
-}
-.courses h2{
-  text-align: center;
-  color: rgb(0, 36, 71);
-  font-size: 32px;
-  padding-bottom: 10px;
-}
-.courses p{
-   font-style: italic;
-   text-align: center;
-}
-.courses-card{
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.courses-card img:hover{
-  transform: scale(1.04);
-}
-.courses-card img{
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-.c-card{
-    width: 32%;
-    background: #E9E6EA;
-    position: relative;
-}
-.c-card:hover{
-    background: white;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
-}
-.c-card .price{
-   padding: 6% 5%;
-   background: #FDC632;
-   border-radius: 35px;
-   font-size: 20px;
-   font-weight: 500;
-   position: absolute;
-   right: 10px;
-   bottom: 230px;
-}
-.c-card .price:hover{
-    background: rgb(0, 36, 71);
-    color: #FDC632;
-}
-.btn.course-btn{
-    background: rgb(0, 36, 71);
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 12px;
-    margin-top: 30px;
-    margin-left: 25px;
-    border-radius: 2px;
-}
-.user-col h3{
-    margin-top: 25px;
-    margin-left: 25px;
-}
-.user-col h3:hover{
-    color: #FDC632;
-}
-.user-col p{
-    font-style: normal;
-    margin-top: 15px;
-    margin-left: 25px;
-    text-align: start;
-}
-.user-div{
-    padding: 20px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.user-div img{
-    width: 45px;
-    border-radius: 30px;
-}
-.user-div i{
-    margin-right: 10px;
-}
-.user{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+.courses {
+    padding: 80px 50px;
+    background: #fdfaf6;
 }
 
-@media screen and (max-width: 1055px) {
-    .c-card .price{
-        bottom: 245px;
-    }
-    .user-col h3,.user-col p{
-        margin-left: 15px;
-    }
-    .user-div{
-        padding: 15px 16px;
-    }
-    .user-div i{
-        margin-right: 5px;
+.courses-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.courses-header h2 {
+    color: #002447;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.courses-header p {
+    font-style: italic;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Courses Cards Container */
+.courses-card {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual Course Card */
+.c-card {
+    background: #fff;
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.c-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Course Image */
+.c-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.c-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Price Tag */
+.c-card .price {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #fdc632;
+    color: #002447;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.c-card .price:hover {
+    background: #002447;
+    color: #fdc632;
+}
+
+/* Course Details */
+.user-col {
+    padding: 20px;
+}
+
+.btn.course-btn {
+    background: #002447;
+    color: #fff;
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    cursor: default;
+    margin-bottom: 15px;
+}
+
+.user-col h3 {
+    font-size: 20px;
+    color: #002447;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.user-col h3:hover {
+    color: #fdc632;
+}
+
+.user-col p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* User Info Row */
+.user-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-about {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+}
+
+.user-about i {
+    color: #fdc632;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .courses-card {
+        justify-content: space-around;
     }
 }
-@media screen and (max-width: 800px) {
-    .c-card .price{
-        bottom: 305px;
-    }
-    .user-div{
+
+@media screen and (max-width: 768px) {
+    .courses-card {
         flex-direction: column;
+        align-items: center;
     }
-    .user-div i{
-        font-size: 25px;
-        width: 40px;
+
+    .c-card {
+        width: 90%;
     }
-}
-@media screen and (max-width: 765px) {
-    .c-card .price{
-        bottom: 330px;
-    }   
-}
-@media screen and (max-width: 567px) {
-    .c-card .price{
-        bottom: 210px;
-        right: 20px;
-    }   
-    .courses-card{
-    flex-direction: column;
-    gap: 20px;
-    }
-    .c-card{
-        width: 100%;
-    }
-    .user-div{
-        flex-direction: row;
-    }
-}
-@media screen and (max-width: 465px) {
-    .c-card .price{
-        bottom: 230px;
-        right: 20px;
-    }   
 }

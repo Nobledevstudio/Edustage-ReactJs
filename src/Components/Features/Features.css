@@ -1,49 +1,102 @@
-.features{
-    padding-top: 80px;
+.features {
+    padding: 100px 50px;
+    background: #fdfaf6;
 }
-.features h3{
-    text-align: center;
-    color: rgb(0, 36, 71);
-    font-size: 32px;
-}
-.features p{
-    text-align: center;
-    padding-top: 10px;
-    font-style: italic;
-}
-.features-card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 65px;
-    padding-bottom: 65px;
 
+/* Section Text */
+.features-text {
+    text-align: center;
+    margin-bottom: 60px;
 }
-.f-card{
-    flex-basis: 32%;
-    width: 100%;
-    background: #E9E6EA;
-    padding: 30px 20px;
-    border: 1px solid #E9E6EA;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+.features-text h3 {
+    color: #002447;
+    font-size: 36px;
+    font-weight: 700;
 }
-.f-card span i{
-    font-size: 30px;
-    color: rgb(0, 36, 71);
-    padding-bottom: 10px;
+
+.features-text p {
+    color: #555;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
 }
-.features-card h4{
-    font-size: 20px;
-    color: rgb(0, 36, 71);
+
+/* Feature Cards Container */
+.features-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row on XL */
+    gap: 30px;
 }
-.features-card p{
-    font-style: normal;
-    text-align: start;
+
+/* Individual Feature Card */
+.f-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
 }
-@media screen and (max-width: 570px) {
-    .features-card{
-    flex-direction: column;
-     gap: 15px;
+
+.f-card span i {
+    font-size: 40px;
+    color: #fdc632;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.f-card h4 {
+    font-size: 22px;
+    color: #002447;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.f-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect for Cards */
+.f-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+
+/* Medium screens (2 cards per row) */
+@media screen and (max-width: 1024px) {
+    .features-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (1 card per row) */
+@media screen and (max-width: 768px) {
+    .features-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra small screens adjustments */
+@media screen and (max-width: 480px) {
+    .features {
+        padding: 60px 20px;
+    }
+
+    .f-card {
+        padding: 30px 20px;
+    }
+
+    .features-text h3 {
+        font-size: 28px;
+    }
+
+    .features-text p {
+        font-size: 14px;
     }
 }

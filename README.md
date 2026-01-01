@@ -23,7 +23,7 @@
 
 Add your deployed project link here:
 
-- GitHub Pages / Netlify / Vercel: [https://your-project-link.com](https://your-project-link.com)
+- GitHub Pages: https://nobledevstudio.github.io/Edustage-ReactJs/
 
 ---
 

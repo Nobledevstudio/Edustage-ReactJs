@@ -34,7 +34,7 @@ const testimonials = [
   },
   {
     img: client4,
-    name: 'Austin Lam',
+    name: 'Austin Doe',
     feedback: 'A professional and modern learning platform. The courses are well-structured and fun to complete.'
   }
 ]

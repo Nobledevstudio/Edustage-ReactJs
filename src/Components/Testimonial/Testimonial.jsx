@@ -29,12 +29,12 @@ const testimonials = [
   },
   {
     img: client4,
-    name: 'Sophia Williams',
+    name: 'Emmanuel James',
     feedback: 'A professional and modern learning platform. The courses are well-structured and fun to complete.'
   },
   {
     img: client4,
-    name: 'Sophia Williams',
+    name: 'Austin Lam',
     feedback: 'A professional and modern learning platform. The courses are well-structured and fun to complete.'
   }
 ]
